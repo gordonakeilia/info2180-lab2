@@ -1,0 +1,134 @@
+/* Default Body & Typography Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* CSS Grid Layout for .container */
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    grid-area: header;
+    background-color: #3C8527;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 39px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    margin: 10px 0 5px 0;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+/* Sidebar Styling */
+aside {
+    grid-area: aside;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+aside h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+aside h3:nth-of-type(1) {
+    color: #333322;
+}
+
+aside h3:nth-of-type(2),
+aside h3:nth-of-type(3) {
+    color: #28651C;
+}
+
+aside p {
+    background-color: #E2E8F0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside ul li a {
+    color: #2879B8;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+article {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E2E8F0;
+    padding-bottom: 20px;
+}
+
+article h2 {
+    font-size: 34px;
+    color: #28651C;
+    margin-bottom: 5px;
+}
+
+.post-meta {
+    color: #667267;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.float-img {
+    width: 250px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Footer Styling */
+footer {
+    grid-area: footer;
+    background-color: #28651C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
